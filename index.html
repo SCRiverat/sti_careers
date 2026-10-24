@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
+<title>Sandra Carolina Rivera-Torres</title>
+
+
+<style>
+/* CV formal y autónomo, compatible con GitHub Pages */
+:root { --ink:#23354b; --blue:#264a68; --line:#d9e2e9; --muted:#62748a; }
+* { box-sizing:border-box; }
+body { margin:0; background:#fff; color:var(--ink); font:14px/1.52 Arial,Helvetica,sans-serif; }
+main { max-width:900px; margin:0 auto; padding:30px 38px 46px; }
+h1 { font-size:30px; letter-spacing:-.02em; color:#173954; margin:0 0 10px; }
+h2 { font-size:17px; color:var(--blue); margin:25px 0 11px; padding-bottom:6px; border-bottom:1px solid var(--line); }
+h3 { font-size:15px; color:var(--blue); margin:22px 0 6px; }
+p { margin:7px 0 11px; }
+ul { padding-left:23px; margin:9px 0 16px; }
+li { margin:5px 0; }
+a { color:#235e88; text-decoration:none; }
+a:hover,a:focus-visible { text-decoration:underline; }
+.cv-contact { margin:15px 0 25px; padding:10px 0; border-block:1px solid var(--line); font-size:12px; }
+.cv-contact p { margin:0; display:flex; align-items:center; flex-wrap:wrap; gap:9px 13px; }
+.cv-contact a { overflow-wrap:anywhere; }
+.cv-contact .contact-group { display:inline-flex; flex-wrap:wrap; gap:5px; align-items:center; }
+.cv-contact .cv-icon { display:inline-flex; align-items:center; gap:5px; white-space:nowrap; }
+.cv-icon::before { display:inline-flex; align-items:center; font-size:15px; color:var(--blue); }
+.cv-mail::before { content:'✉'; }
+.cv-phone::before { content:'☎'; }
+.cv-linkedin::before { content:'in'; font:bold 12px/16px Arial,sans-serif; color:white; background:var(--blue); width:16px;height:16px; justify-content:center; border-radius:2px; }
+.cv-github::before { content:'⌘'; font-size:17px; }
+@media(max-width:640px) { main { padding:22px 20px; } h1 { font-size:26px; } }
+@media print { @page { size:A4; margin:17mm; } main{max-width:none;padding:0;} body{font-size:10pt;} h2,h3 {break-after:avoid;} li{break-inside:avoid;} a{color:inherit;} .cv-contact {font-size:9pt;} }
+
+.cv-mail::before,.cv-phone::before,.cv-github::before {content:""; width:15px;height:15px; background:currentColor; -webkit-mask:var(--icon) center/contain no-repeat; mask:var(--icon) center/contain no-repeat;}
+.cv-mail { --icon:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Crect%20x%3D%222%22%20y%3D%224%22%20width%3D%2220%22%20height%3D%2216%22%20rx%3D%222%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%222%22%2F%3E%3Cpath%20d%3D%22m2%206%2010%207%2010-7%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%222%22%2F%3E%3C%2Fsvg%3E"); }
+.cv-phone { --icon:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M22%2016.92v3a2%202%200%200%201-2.18%202A19.79%2019.79%200%200%201%203.09%205.18%202%202%200%200%201%205.08%203h3a2%202%200%200%201%202%201.72c.12.96.34%201.91.65%202.81a2%202%200%200%201-.45%202.11L9%2010.91a16%2016%200%200%200%204.09%204.09l1.27-1.27a2%202%200%200%201%202.11-.45c.9.31%201.85.53%202.81.65A2%202%200%200%201%2022%2016.92z%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%222%22%2F%3E%3C%2Fsvg%3E"); }
+.cv-github { --icon:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22black%22%20d%3D%22M12%20.9a11.1%2011.1%200%200%200-3.51%2021.63c.55.1.76-.24.76-.54v-2.07c-3.1.67-3.75-1.32-3.75-1.32-.5-1.28-1.23-1.63-1.23-1.63-1.01-.69.08-.67.08-.67%201.12.08%201.71%201.15%201.71%201.15.99%201.69%202.59%201.2%203.22.92.1-.72.39-1.2.7-1.48-2.47-.28-5.07-1.23-5.07-5.48%200-1.21.43-2.19%201.14-2.96-.11-.28-.49-1.4.11-2.91%200%200%20.93-.3%203.05%201.13a10.6%2010.6%200%200%201%205.55%200c2.12-1.43%203.05-1.13%203.05-1.13.6%201.51.22%202.63.11%202.91.71.77%201.14%201.75%201.14%202.96%200%204.26-2.61%205.19-5.1%205.47.4.35.75%201.02.75%202.06v3.05c0%20.3.2.65.77.54A11.1%2011.1%200%200%200%2012%20.9Z%22%2F%3E%3C%2Fsvg%3E"); }
+</style><meta content="Currículum profesional de Sandra Carolina Rivera-Torres." name="description"/></head>
+<body><main id="contenido-cv">
+
+<h1 class="cv-name" id="sandra-carolina-rivera-torres">Sandra Carolina
+Rivera-Torres</h1>
+<p><strong>Investigadora · Consultora</strong></p>
+<p>Evaluación de políticas públicas · Ciencia, Tecnología e Innovación
+(CTI) · Educación superior · Análisis de datos</p>
+<div class="cv-contact">
+<p><span class="contact-group"><a class="cv-icon cv-mail" href="mailto:scriverat@gmail.com">scriverat@gmail.com</a> · <a href="mailto:scriverat@unal.edu.co">scriverat@unal.edu.co</a></span><a class="cv-icon cv-linkedin" href="https://www.linkedin.com/in/sandra-carolina-rivera-torres-959283153">LinkedIn</a><a class="cv-icon cv-github" href="https://scriverat.github.io/cv/">CV</a></p>
+</div>
+<h2 id="perfil">Perfil profesional</h2>
+<p>Investigadora, consultora y docente especializada en análisis,
+diseño, gestión y evaluación de políticas públicas, particularmente en
+Ciencia, Tecnología e Innovación (CTI) y educación superior. Experiencia
+en investigación aplicada, análisis de datos, evaluación de programas,
+políticas de fomento a la I+D y estudio de capacidades y trayectorias
+científicas, en colaboración con universidades y organizaciones
+nacionales e internacionales. Manejo de metodologías cualitativas,
+cuantitativas y mixtas, análisis longitudinal, bibliometría y
+cienciometría para generar evidencia útil en el diseño, seguimiento y
+evaluación de políticas y estrategias institucionales.</p>
+<h2 id="experiencia-profesional">Experiencia profesional</h2>
+<h3 id="investigadora">Investigadora</h3>
+<p><strong>Grupo de Investigación en Gestión y Estrategia de
+Organizaciones (GRIEGO)</strong></p>
+<p><strong>Facultad de Ciencias Económicas, Universidad Nacional de
+Colombia · 2009 – Actualidad</strong></p>
+<p>Integrante del grupo GRIEGO de la Facultad de Ciencias Económicas,
+categoría A1 MinCiencias.</p>
+<ul>
+<li>Proyecto de trayectorias de investigadores en Colombia
+(2013–2025) a partir del análisis de secuencias para datos
+administrativos y de producción científica.</li>
+<li>Ponencia: <em>“Evolución en las trayectorias de los
+investigadores reconocidos en el Sistema Nacional de CTI: una
+aproximación al análisis de capacidades desde el análisis de
+secuencias”</em> presentada en XII Congreso Iberoamericano de
+Indicadores de Ciencia y Tecnología (Montevideo, 2025). <a href="https://drive.google.com/file/d/17Jm_0t3rhSsHdLzw4a3vnplKKBSmc1Dp/view?usp=sharing">Presentación
+- RICyT</a></li>
+<li>Póster: “<em>Evolution of the Trajectories of Researchers in the
+Colombian STI System: A Capacity-Based Approach through Sequence
+Analysis</em>” presentado en la conferencia 4th OECD Blue Sky (París,
+2026). <a href="https://cdn.fourwaves.com/static/media/filecontent/2efd7b1e-8e98-4e56-87e3-a9a3033aaf61/3bb069c9-5b8a-4156-8127-39a18f195f3b.pdf">Poster
+- site OECD</a></li>
+<li>Proyecto doctoral sobre capacidades de investigación en
+universidades colombianas, con enfoque longitudinal y
+relacional.</li>
+<li>Análisis de trayectorias profesionales y carreras académicas de
+docentes de la Universidad Nacional de Colombia e investigadores del
+Sistema Nacional de Ciencia, Tecnología e Innovación (SNCTI).</li>
+<li>Piloto de encuesta a egresados 2023 de programas del área de
+Gestión y Organizaciones de la Facultad de Ciencias Económicas de la
+Universidad Nacional de Colombia.</li>
+<li>Exploración de métricas y técnicas en la producción de
+indicadores de investigación y desarrollo (I+D) y analizar datos
+longitudinales.</li>
+</ul>
+<h3 id="profesional---asistente-pedagógico">Profesional - Asistente
+pedagógico</h3>
+<p><strong>Institution Saint-Jude — Armentières, Francia · 2024 –
+Actualidad</strong></p>
+<ul>
+<li>Elaboración y adaptación de materiales educativos digitales para
+diferentes niveles y perfiles de aprendizaje y acompañamiento de
+estudiantes en actividades de internacionalización y movilidad hacia
+entornos de habla hispana para prácticas, inserción laboral e inmersión
+lingüística.</li>
+</ul>
+<h3 id="consultora">Consultora</h3>
+<p><strong>Profesional independiente</strong> · <strong>2020 –
+Actualidad</strong></p>
+<p><strong>Universidad de los Llanos (Unillanos), 2025</strong>:
+Desarrollo de indicadores de diagnóstico en el marco de la formulación
+de la política de Ciencia Abierta <a href="https://docs.google.com/document/d/1NIZODzLw_FD4fj-KAikUQnP5wzJ-H9Xs/edit?usp=sharing&amp;ouid=116050739372403308695&amp;rtpof=true&amp;sd=true">(Reporte
+insumo)</a></p>
+<p><strong>Universidad del Trópico Americano (Unitrópico),
+2025</strong>: elaboración de un documento de política institucional
+para el diseño del proyecto académico y pedagógico institucional <a href="https://scriverat.quarto.pub/pei_unitropico_2025/">(Proyecto
+PEI)</a></p>
+<p><strong>Instituto de Estadística de la UNESCO (UIS), 2021</strong>:
+análisis de indicadores de educación STEM en 33 países de América Latina
+y el Caribe, revisión de estadísticos comparados y elaboración de
+reporte.</p>
+<p><strong>Red Iberoamericana de Indicadores de Ciencia y Tecnología (RICYT), 2020</strong>: coautora del capítulo «RICYT como comunidad de práctica: ¿Cómo se ha conformado en 25 años?», publicado en <em>El Estado de la Ciencia</em>. <a href="https://www.ricyt.org/wp-content/uploads/2020/11/edlc_2020_2_2_LaRicytComoComunidadDePractica.pdf">Salazar y Rivera-Torres (2020), RICYT</a>.</p>
+<h3 id="consultora-analista">Consultora — Analista</h3>
+<p><strong>Technopolis Group</strong> · <strong>2022 – 2024</strong></p>
+<p><strong>Proyecto: Evaluación de impacto del Programa Fondo de
+Investigación en Salud (FIS) para MinCiencias, Colombia</strong></p>
+<ul>
+<li>Participación en el equipo cuantitativo del componente de evaluación
+de impacto del FIS y desarrollo del componente bibliométrico y de
+indicadores de producción de conocimiento asociados a proyectos
+financiados en el período 2011 a 2021.</li>
+</ul>
+<p><strong>Proyecto: Componente de medición de brechas de género del proyecto de la Asistencia técnica para la mejora de los Sistemas de Producción estadística de ciencia y tecnología en el Marco del Programa FORCYT de la OEI y la RICYT</strong>
+</p>
+<ul>
+<li>Contribución y formulación de la propuesta metodológica para la
+identificación, caracterización y medición de brechas de género en los
+sistemas científicos de América Latina, con énfasis en el análisis de
+indicadores y fuentes de información para realizar comparaciones entre
+países de la región. <a href="https://oei.int/wp-content/uploads/2023/05/forcyt-guia-de-medicion-brechas-genero-en-ciencia.pdf">(Guía
+de medición de brechas de género, 2023, OEI)</a></li>
+</ul>
+<h3 id="profesional-analista-de-datos">Profesional — Analista de
+datos</h3>
+<p><strong>Universidad Nacional de Colombia</strong> · <strong>2023 –
+2024</strong></p>
+<p><strong>Modelo de Evaluación de Impacto de la Investigación y la
+Tercera Misión — Componente Plan Global de Desarrollo
+2021–2024</strong></p>
+<ul>
+<li>Diseño metodológico de la evaluación del impacto de programas
+académicos e iniciativas de impacto social vinculadas a la estrategia
+institucional y producción de indicadores para la medición, monitoreo y
+evaluación de capacidades de investigación de la Universidad de
+Colombia.</li>
+</ul>
+<h3 id="investigador---pasantía">Investigador - Pasantía</h3>
+<p><strong>Laboratorio PACTE, Université Grenoble Alpes</strong>·
+<strong>2018 – 2019</strong></p>
+<p><strong>Proyecto: Emergencia de los desafíos tóxico-epigenéticos,
+desafíos científicos y regímenes regulatorios</strong></p>
+<ul>
+<li>Construcción de bases de datos bibliométricas, análisis de redes de
+colaboración y cartografía de comunidades científicas emergentes, como
+parte del trabajo final de maestría. <a href="https://www.pacte-grenoble.fr/fr/recherche-0/projets-recherche/emergence-toxico-epigenetics-scientific-challenges-and-regulatory-controversies-pacte-ucla">Proyecto
+ToxEpi</a></li>
+</ul>
+<h3 id="investigador---líder-área-de-recursos-humanos-en-cti">Investigador -
+Líder área de recursos humanos en CTI</h3>
+<p><strong>Observatorio Colombiano de Ciencia y Tecnología (OCyT) ·
+2010–2016</strong></p>
+<p><strong>Actividades realizadas</strong></p>
+<ul>
+<li>Coordinación de equipos para la producción de indicadores de
+ciencia y tecnología, elaboración de estudios e informes nacionales
+sobre capacidades científicas y tecnológicas y programas de fomento a la
+I+D y del componente de recursos humanos del reporte anual de
+indicadores 2010 a 2016.</li>
+<li>Colaboración con entidades gubernamentales, universidades,
+organismos internacionales y organizaciones no gubernamentales.</li>
+</ul>
+<p><strong>Publicaciones y resultados destacados</strong></p>
+<ul>
+<li>coautoría de capítulos de <em>Colciencias cuarenta años</em> (2013),
+sobre <a href="https://ocyt.org.co/wp-content/uploads/2021/06/colciencias40.pdf#page=356">formación
+de investigadores de alto nivel</a> y <a href="https://ocyt.org.co/wp-content/uploads/2021/06/colciencias40.pdf#page=486">diáspora
+científica colombiana – Red Caldas</a>; estudios sobre <a href="https://ocyt.org.co/wp-content/uploads/2021/06/observando-el-sistema.pdf#page=107">trayectorias
+de investigadores y capacidades científicas universitarias</a>; y
+contribuciones a congresos internacionales de indicadores de CTI (RICYT
+y STI, 2010–2013).</li>
+</ul>
+<h3 id="asesora-vicerrectoría-de-investigación">Asesora Vicerrectoría de
+Investigación</h3>
+<p><strong>Universidad Nacional de Colombia</strong> ·
+<strong>2005–2010</strong></p>
+<p><strong>Actividades realizadas</strong></p>
+<ul>
+<li>Asesoría y apoyo a la gestión de programas y proyectos de
+investigación, incluyendo planificación académica, administrativa y
+presupuestal.</li>
+<li>Identificación y coordinación de requerimientos funcionales para
+el desarrollo de sistemas de información de apoyo a la gestión académica
+y de investigación.</li>
+<li>Participación en iniciativas institucionales orientadas al
+fortalecimiento y análisis de las capacidades de investigación de la
+Universidad, coautoría del artículo <a href="https://fce.unal.edu.co/media/files/innovar/EDUCACION2009.pdf#page=179"><em>A
+Model for Measuring Research Capacity Using an Intellectual
+Capital-Based Approach in a Colombian Higher Education
+Institution</em></a> <a href="https://www.researchgate.net/publication/262426699_A_model_for_measuring_research_capacity_using_an_intellectual_capital-based_approach_in_a_Colombian_higher_education_institution">(2009)</a>,
+basado en un enfoque de capital intelectual.</li>
+</ul>
+<h2 id="formación">Formación</h2>
+<ul>
+<li><p><strong>Doctorado en Ciencias Económicas</strong></p>
+<p>Universidad Nacional de Colombia</p>
+<p>Tesis sustentada: <em>Análisis de las capacidades de investigación en
+las universidades colombianas basado en las trayectorias de los
+investigadores: un enfoque longitudinal y relacional,</em>
+2022.</p></li>
+<li><p><strong>Maestría en Evaluación y Gestión de Políticas
+Públicas</strong></p>
+<p>Université Grenoble Alpes, Francia, 2019.</p></li>
+<li><p><strong>Maestría en Administración de Empresas</strong></p>
+<p>Universidad Nacional de Colombia, 2007.</p></li>
+<li><p><strong>Administración de Empresas</strong></p>
+<p>Universidad Nacional de Colombia, 2004.</p></li>
+</ul>
+<h2 id="formación-complementaria">Formación complementaria</h2>
+<ul>
+<li><strong>Informática – Desarrollo de aplicaciones</strong> CNAM
+Lille, Francia, 2023.</li>
+<li><strong>Desarrollo Web</strong>, CNAM Lille, Francia,
+2022.</li>
+<li><p><strong>Data Science for All (DS4A)</strong>, Correlation One /
+MinTIC, Colombia — 2022.</p>
+<p><strong>Herramientas:</strong> R, Python, SQL · VOSviewer, Gephi,
+Cortext Manager · MySQL, SQLite.</p></li>
+</ul>
+<h2 id="competencias-y-áreas-de-interés">Competencias y áreas de
+interés</h2>
+<p>Evaluación de políticas públicas y programas; investigación aplicada;
+análisis longitudinal; métodos cualitativos, cuantitativos y mixtos;
+bibliometría y cienciometría; indicadores de CTI; gestión de proyectos;
+redacción de documentos académicos, institucionales e informes
+analíticos.</p>
+<h2 id="idiomas">Idiomas</h2>
+<ul>
+<li><strong>Español:</strong> nativo.</li>
+<li><strong>Francés:</strong> fluido; DELF B2 y DU de Francés/FLE
+(Université Grenoble Alpes, 2017).</li>
+<li><strong>Inglés:</strong> intermedio; Michigan English Test (MET),
+B1 (2010).</li>
+</ul>
+<p>Información adicional y soportes a solicitud</p>
+</main></body>
+</html>
